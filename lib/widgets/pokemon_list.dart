@@ -36,7 +36,7 @@ class _PokemonListState extends State<PokemonList> {
                 (context, index){return PokelistItem(pokemon: _listem[index]);}
           );
         } else if (snapshot.hasError) {
-          return const Center(child: Text("hata çıktı"));
+          return const Center(child: Text("hata çıktı sanırım"));
         } else {
           return Center(child: CircularProgressIndicator());
         }
